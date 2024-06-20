@@ -10,6 +10,7 @@ import com.nit.bean.ArmstrongNumber;
 public class DemoProj02Application {
 
 	public static void main(String[] args) {
+		System.out.println("DemoProj02Application.main()");
 		ConfigurableApplicationContext ctx=SpringApplication.run(DemoProj02Application.class, args);
 		ArmstrongNumber a=ctx.getBean("arm",ArmstrongNumber.class);
 		int num=142;
